@@ -1,0 +1,43 @@
+
+.s-box{
+    background-color: #fff;
+    min-width: 28.12em;
+    max-height: 18.75em;
+    border-radius: 5px;
+    border-color: transparent;
+    margin: auto;
+    padding: 1em .5em;
+	box-shadow: 0 4px 8px rgba(0,0,0,.05);
+}
+.s-table{
+    background-color: #fff;
+    max-width: 62.5em;
+    min-height: auto;
+    border-radius: 5px;
+    border-color: transparent;
+    margin: auto;
+    padding: 1em .5em;
+	box-shadow: 0 4px 8px rgba(0,0,0,.05);
+}
+.s-tally{
+    width: 100%;
+    text-align: end;   
+    height: auto;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+    .s-box{
+        max-width: 6.25em;
+    }   
+    .s-table{
+    }
+}
+@media screen and (max-width: 768px) {
+    .s-box{
+        max-width: 250px;
+    }
+    .s-table{
+        margin-top: 1rem;
+        max-width: 400px;
+    }
+}
