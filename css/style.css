@@ -1,13 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap');
 
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+}
+
+#app .row{
+    width: 100%;
+    margin: 0;
+}
 .s-box{
     background-color: #fff;
-    min-width: 28.12em;
-    max-height: 18.75em;
+    max-width: 500px;
+    height: 330px;
     border-radius: 5px;
     border-color: transparent;
-    margin: auto;
+    margin: 50px auto ;
     padding: 1em .5em;
 	box-shadow: 0 4px 8px rgba(0,0,0,.05);
+
 }
 .s-table{
     background-color: #fff;
@@ -19,25 +33,43 @@
     padding: 1em .5em;
 	box-shadow: 0 4px 8px rgba(0,0,0,.05);
 }
+.table-info{
+    max-width: 98%;
+}
 .s-tally{
     width: 100%;
-    text-align: end;   
+    text-align: center;   
     height: auto;
+    font-size: .8em;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1200px) {
-    .s-box{
-        max-width: 6.25em;
-    }   
-    .s-table{
-    }
+.row .s-table hr{
+    width: 60%;
+    margin: 2em auto 1.5em auto;
+    border-top: 2px solid rgb(0, 0, 0);
 }
-@media screen and (max-width: 768px) {
-    .s-box{
-        max-width: 250px;
-    }
-    .s-table{
-        margin-top: 1rem;
-        max-width: 400px;
-    }
+
+@media screen and (max-width: 1200px) {
+
+.s-box{
+    height: auto ;
+}
+label{
+    text-align: center ;
+}
+input{
+    width: 100% ;
+}
+
+}
+
+@media screen and (max-width: 420px){
+    
+
+#app .row .col-md-12{
+    padding: 0;
+}
+#app .p-3{
+    padding: 0 !important;
+}
 }
